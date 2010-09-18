@@ -13,6 +13,6 @@ insert into pledge (dare_id, donor, amount, comment)
 values (1, 853925393, 2.00, 'Pledge prior to pre approval');
 
 -- pledge with preapproval
-insert into pledge (dare_id, donor, amount, comment, paypal_pre_approval_key, paypal_pre_approval_time, pay_pal_user_id)
+insert into pledge (dare_id, donor, amount, comment, paypal_pre_approval_key, paypal_pre_approval_time, paypal_user_id)
 values (1, 853925393, 3.00, 'Pledge with to pre approval', 'key', now(), 'luke.stephenson@gmail.com');
 

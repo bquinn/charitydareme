@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS `pledge` (
   `paypal_pre_approval_time` timestamp NULL,
   `paypal_user_id` varchar(200) NULL,
   `paypal_payment_time` timestamp NULL,
-  `paypal_payment_status` varchar(1) NOT NULL DEFAULT 'A' -- Awaiting Preapproval, Preapproved, Sent
+  `paypal_payment_status` varchar(1) NOT NULL DEFAULT 'A', -- Awaiting Preapproval, Preapproved, Sent
   PRIMARY KEY (`pledge_id`),
   FOREIGN KEY (`dare_id`) REFERENCES dare(dare_id)
-) TYPE=InnoDB  DEFAULT CHARSET=latin AUTO_INCREMENT=1 ;
+) TYPE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
